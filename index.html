@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Code Help Labs</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Online Compiler</h1>
+            </header>
+            <div class="split-container">
+                <div class="editor">
+                    <div class="header">
+                        <button>RUN</button>
+                        <select>
+                            <option>C++</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                            <option>JavaScipt</option>
+                        </select>
+                        <div class="file-menu">
+                            <span>File</span>
+                            <span>Settings</span>
+                        </div>
+                        <span class="status">SOURCE - main.cpp</span>
+                    </div>
+                    <textarea
+                        id="code"
+                        placeholder="Your code here..."
+                    ></textarea>
+                </div>
+
+                <div class="output">
+                    <div class="stdin">
+                        <h3>STDIN</h3>
+                        <textarea
+                            placeholder="Your input goes here..."
+                        ></textarea>
+                    </div>
+                    <br />
+                    <div class="stdout">
+                        <h3>STDOUT</h3>
+                        <textarea
+                            placeholder="Your output will be displayed here..."
+                        ></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
